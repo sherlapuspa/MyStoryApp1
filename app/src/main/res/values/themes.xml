@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyStoryApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/black</item>
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/my_blue</item>
+        <item name="colorSecondaryVariant">#19506C</item>
+        <item name="colorOnSecondary">#19506C</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="recyclerView">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbarSize">0dp</item>
+    </style>
+
+    <style name="Theme.MyStoryApp.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">20dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">10dp</item>
+    </style>
+
+    <style name="Theme.MyStoryApp.AppWidgetContainer" parent="Theme.MyStoryApp.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">20dp</item>
+        <item name="android:background">#454849</item>
+
+    </style>
+
+</resources>

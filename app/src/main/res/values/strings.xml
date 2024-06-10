@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">My Story App</string>
+    <string name="welcomeHeader">Welcome Back!</string>
+    <string name="subtitle_login">Tell your story here</string>
+    <string name="loginIcon">Login icon</string>
+    <string name="registerIcon">Register icon</string>
+    <string name="registSubHeader">Enter your account here</string>
+    <string name="slogan">Share Stories, Create Memories</string>
+    <string name="sloganBottom">Dicoding Submission</string>
+    <string name="loginBar">Login</string>
+    <string name="signupBar">Sign Up</string>
+    <string name="floatingBtn">Add new story</string>
+    <string name="notFoundData">No data found. Please check your internet connection</string>
+    <string name="switchLang">Change Language</string>
+    <string name="home">Home</string>
+    <string name="loading_error">Failed to load data. Error :</string>
+    <string name="scrollItem">Scroll</string>
+    <string name="usersStory">%1$s\'s Story</string>
+    <string name="userName">Write story of</string>
+    <string name="actionBarPost">Create story</string>
+    <string name="message">Message  :</string>
+    <string name="upload_succeed">Story posted successfully</string>
+
+    <string name="selectCamBtn">Camera</string>
+    <string name="selectGallBtn">Gallery</string>
+    <string name="storyDesc">Story Description</string>
+    <string name="uploadBtn">Share Story</string>
+    <string name="select_img">Choose Picture</string>
+
+    <string name="username">Name</string>
+    <string name="dateCreated">April 13, 2023, 22:50:21</string>
+    <string name="content">Content story</string>
+    <string name="imgNotFound">Data not found</string>
+
+    <string name="email">Email</string>
+    <string name="invalidEmailAddress">Wrong email format. \"@\" needed</string>
+    <string name="emailIsInUse">This email address is already in use, please choose a different email</string>
+    <string name="failedRegist">Registration unsuccessful, please try again.</string>
+
+    <string name="password">Password</string>
+    <string name="passwordConfirm">Confirm password</string>
+    <string name="passwordVisible">Show Password</string>
+    <string name="passwordLess">Password must be at least 8 characters</string>
+    <string name="mismatchPass">Passwords don\'t match</string>
+    <string name="wrongPass">The password you entered is incorrect</string>
+
+    <string name="login_button">Login</string>
+    <string name="failedLogin">Make sure to input your account data correctly!</string>
+    <string name="welcomeTitle">Welcome!</string>
+    <string name="register">Don\'t have an account yet?</string>
+    <string name="registerBtn">Register</string>
+    <string name="signUp">Sign Up</string>
+
+    <string name="nullName">Name cannot be empty</string>
+    <string name="nullEmail">Email cannot be empty</string>
+    <string name="nullPass">Password cannot be empty</string>
+    <string name="nullConfirmPass">Confirm password cannot be empty</string>
+    <string name="name">Name</string>
+
+    <string name="logout">Log Out</string>
+    <string name="logoutWarn">Are you sure you want to log out?</string>
+    <string name="logoutYes">Yes</string>
+    <string name="logoutSucceed">Logged out successfully</string>
+    <string name="logoutNo">No</string>
+
+    <string name="uploadedImg">This contains images from the story</string>
+    <string name="uploadedOn">Uploaded on:</string>
+
+    <string name="package_name">com.dicoding.mystoryapp</string>
+
+    <string name="logoMyStorySplash">Logo MyStory</string>
+    <string name="alertNullImg">Please input photo first</string>
+    <string name="alertNullDesc">Please add description first</string>
+    <string name="logo_desc">logo app</string>
+</resources>

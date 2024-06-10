@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="298dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/loginIcon"
+        android:src="@drawable/mystory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoginDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:text="@string/welcomeHeader"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/my_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginIcon"
+        app:layout_constraintStart_toStartOf="@+id/loginIcon"
+        app:layout_constraintTop_toBottomOf="@+id/loginIcon" />
+
+    <TextView
+        android:id="@+id/tellYourStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0"
+        tools:alpha="1"
+        android:text="@string/subtitle_login"
+        android:textColor="#6F7387"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginDescription" />
+
+
+    <com.dicoding.mystoryapp.cv.EmailCV
+        android:id="@+id/CVEmail"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:alpha="0"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tellYourStory"
+        tools:alpha="1" />
+
+    <com.dicoding.mystoryapp.cv.PassCV
+        android:id="@+id/PasswordLogin"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginDescription"
+        app:layout_constraintTop_toBottomOf="@+id/CVEmail" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/rounded_black_bg"
+        android:text="@string/login_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordLogin"
+        app:layout_constraintStart_toStartOf="@+id/PasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/vissiblePass" />
+
+    <TextView
+        android:id="@+id/tvRegistDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:text="@string/register"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <CheckBox
+        android:id="@+id/vissiblePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        tools:alpha="1"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/passwordVisible"
+        app:layout_constraintStart_toStartOf="@+id/PasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordLogin" />
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:text="@string/registerBtn"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/my_blue"
+        app:layout_constraintStart_toEndOf="@+id/tvRegistDescription"
+        app:layout_constraintTop_toTopOf="@+id/tvRegistDescription" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

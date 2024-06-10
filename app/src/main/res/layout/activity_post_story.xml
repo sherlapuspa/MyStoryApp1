@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PostStoryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/postBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/uploadBtn"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_blue_bg"
+            app:layout_constraintEnd_toEndOf="@+id/tv_desc"
+            app:layout_constraintStart_toStartOf="@+id/tv_desc"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="341dp"
+            android:layout_height="314dp"
+            android:layout_marginTop="60dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/storyDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/add_img" />
+
+        <Button
+            android:id="@+id/camBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/selectCamBtn"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/rounded_blue_bg"
+            app:layout_constraintEnd_toStartOf="@+id/galleryBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imgPreview"
+            app:layout_constraintTop_toBottomOf="@+id/imgPreview" />
+
+        <Button
+            android:id="@+id/galleryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/selectGallBtn"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/rounded_blue_bg"
+            app:layout_constraintEnd_toEndOf="@+id/imgPreview"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/camBtn"
+            app:layout_constraintTop_toBottomOf="@+id/imgPreview" />
+
+        <EditText
+            android:id="@+id/tv_desc"
+            android:layout_width="346dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints="Description"
+            android:background="@drawable/desc_story_border"
+            android:gravity="top|left"
+            android:hint="@string/storyDesc"
+            android:inputType="textMultiLine"
+            android:maxHeight="180dp"
+            android:maxLines="8"
+            android:padding="15dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imgPreview"
+            app:layout_constraintStart_toStartOf="@+id/imgPreview"
+            app:layout_constraintTop_toBottomOf="@+id/camBtn"
+            tools:ignore="RtlHardcoded" />
+
+        <ProgressBar
+            android:id="@+id/progressBarPostStory"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/ProgressBarStyleWhite"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPreview"
+            app:layout_constraintEnd_toEndOf="@+id/imgPreview"
+            app:layout_constraintStart_toStartOf="@+id/imgPreview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegistActivity">
+
+    <ImageView
+        android:id="@+id/iconRegist"
+        android:layout_width="298dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/registerIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mystory" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/welcomeTitle"
+        android:textColor="@color/my_blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/iconRegist"
+        app:layout_constraintStart_toStartOf="@+id/iconRegist"
+        app:layout_constraintTop_toBottomOf="@+id/iconRegist" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/registSubHeader"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <com.dicoding.mystoryapp.cv.NameCV
+        android:id="@+id/NameRegistration"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/baseline_user_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <com.dicoding.mystoryapp.cv.EmailCV
+        android:id="@+id/EmailRegistration"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/NameRegistration" />
+
+    <com.dicoding.mystoryapp.cv.PassCV
+        android:id="@+id/PassRegistration"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/EmailRegistration" />
+
+    <com.dicoding.mystoryapp.cv.ConfirmPassCV
+        android:id="@+id/confirmPassRegistration"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/passwordConfirm"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/PassRegistration" />
+
+    <CheckBox
+        android:id="@+id/seeRegistPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/passwordVisible"
+        app:layout_constraintStart_toStartOf="@+id/confirmPassRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassRegistration" />
+
+    <Button
+        android:id="@+id/registrationBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/rounded_black_bg"
+        android:fontFamily="sans-serif"
+        android:text="Sign up"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/seeRegistPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBarStyle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

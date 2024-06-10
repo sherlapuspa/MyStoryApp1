@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">My Story App</string>
+    <string name="welcomeHeader">Selamat Datang Kembali!</string>
+    <string name="subtitle_login">Bagikan ceritamu di sini</string>
+    <string name="loginIcon">Login icon</string>
+    <string name="registerIcon">Register icon</string>
+    <string name="registSubHeader">Masukkan data akun di sini</string>
+    <string name="slogan">Bagikan Cerita, Ciptakan Kenangan</string>
+    <string name="sloganBottom">Dicoding Submission</string>
+    <string name="loginBar">Login</string>
+    <string name="signupBar">Buat Akun</string>
+    <string name="floatingBtn">Tambah Cerita baru</string>
+    <string name="notFoundData">Data tidak ditemukan. Silahkan cek internet anda</string>
+    <string name="switchLang">Ganti Bahasa</string>
+    <string name="home">Beranda</string>
+    <string name="loading_error">Gagal memuat data. Error:</string>
+    <string name="scrollItem">Scroll</string>
+    <string name="usersStory">%1$s\'s Story</string>
+    <string name="userName">Menulis kisah</string>
+    <string name="actionBarPost">Tulis cerita</string>
+    <string name="message">Pesan  :</string>
+    <string name="upload_succeed">Cerita berhasil diunggah</string>
+
+
+    <string name="selectCamBtn">Kamera</string>
+    <string name="selectGallBtn">Galeri</string>
+    <string name="storyDesc">Deskripsi Story</string>
+    <string name="uploadBtn">Bagikan Story</string>
+    <string name="select_img">Pilih Gambar</string>
+
+    <string name="username">Nama</string>
+    <string name="dateCreated">13 April 2023, 22:50:21</string>
+    <string name="content">Content cerita</string>
+    <string name="imgNotFound">Data tidak ditemukan</string>
+
+    <string name="email">Email</string>
+    <string name="invalidEmailAddress">Format email salah. Dibutuhkan \"@\"</string>
+    <string name="emailIsInUse">Alamat email ini telah digunakan, harap pilih email yang berbeda</string>
+    <string name="failedRegist">Registrasi gagal, harap coba lagi</string>
+
+    <string name="password">Password</string>
+    <string name="passwordConfirm">Konfirmasi password</string>
+    <string name="passwordVisible">Lihat Password</string>
+    <string name="passwordLess">Password minimal 8 karakter</string>
+    <string name="mismatchPass">Password tidak sama</string>
+    <string name="wrongPass">Password yang anda masukan salah</string>
+
+    <string name="login_button">Login</string>
+    <string name="failedLogin">Pastikan untuk memasukkan data akun Anda dengan benar!</string>
+    <string name="welcomeTitle">Daftar Akun</string>
+    <string name="register">Belum punya akun?</string>
+    <string name="registerBtn">Daftar</string>
+    <string name="signUp">Buat Akun</string>
+
+    <string name="nullName">Nama tidak boleh kosong</string>
+    <string name="nullEmail">Email tidak boleh kosong</string>
+    <string name="nullPass">Password tidak boleh kosong</string>
+    <string name="nullConfirmPass">Konfirmasi password tidak boleh kosong</string>
+    <string name="name">Nama</string>
+
+    <string name="logout">Keluar</string>
+    <string name="logoutWarn">Anda yakin ingin keluar?</string>
+    <string name="logoutYes">Ya</string>
+    <string name="logoutSucceed">Berhasil keluar</string>
+    <string name="logoutNo">Tidak</string>
+
+    <string name="uploadedImg">Ini berisi gambar dari story</string>
+    <string name="uploadedOn">Diunggah pada:</string>
+
+    <string name="package_name">com.dicoding.mystoryapp</string>
+
+    <string name="logoMyStorySplash">Logo MyStory</string>
+    <string name="alertNullImg">Silahkan masukkan foto terlebih dahulu</string>
+    <string name="alertNullDesc">Silahkan tambahkan deskripsi terlebih dahulu</string>
+    <string name="logo_desc">logo app</string>
+</resources>
